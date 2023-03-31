@@ -1,5 +1,7 @@
 # Use Your Head: Improving Long-Tail Video Recognition
 
+[Project webpage](https://github.com/tobyperrett/lmr)
+
 This repo contains implementations of the Long-tail Mixed Reconstruction (LMR) method from [Use Your Head: Improving Long-Tail Video Recognition](https://tobyperrett.github.io/lmr/use_your_head.pdf), to appear at CVPR 2023. 
 
 It is forked from the [Motionformer](https://github.com/facebookresearch/Motionformer) codebase, so follow/cite that for installation instructions/dataset setup etc.. Alternatively, as the SlowFast codebase (which Motionformer is based on) is difficult to modify, if you want to implement LMR as part of your own method or do a comparison, there is also a simple demo for you to use. It just runs on the cpu with dummy data and no memory bank stuff, and it's here (remember implement the sampling strategies, described below in the models and in the paper):
