@@ -34,7 +34,7 @@ The "verb_lt" output is [average_class_acc, average_head_acc, average_tail_acc, 
 
 
 
-Note that the Framestack codebase is different from Motionformer and relies on pre-extracted ResNet features, so is not provided here.
+Note that the [VideoLT](https://videolt.github.io/) codebase is different from Motionformer and relies on pre-extracted ResNet features, so is not provided here.
 
 # Citation
 
