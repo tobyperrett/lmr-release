@@ -16,7 +16,7 @@ EPIC Kitchens just uses the default dataset as it is a natural long tail. We pro
 
 [Link to splits](https://www.dropbox.com/scl/fo/gekwzzdizgrmz5clacg9x/h?dl=0&rlkey=sxlm9z1nwodchfvhmzxmilv5x)
 
-For both, there are jsons for the train, val and test splits (in the motionformer format). Note that motionformer only uses "train" and "val", so we have renamed these as "train", and "trainval" and "val" for SSv2-LT. Using these as provided will train on the train set, and test on the test set. For VideoLT-LT, we also provide conversions to the format used in the [VideoLT](https://videolt.github.io/) codebase.
+For both, there are jsons for the train, val and test splits (in the motionformer format). Note that motionformer only uses "train" and "val", so we have renamed these as "train", and "trainval" and "val" for SSv2-LT. Using these as provided will train on the train set, and test on the test set. Just replace the default SSv2 jsons with these and it's ready to go. For VideoLT-LT, we also provide conversions to the format used in the [VideoLT](https://videolt.github.io/) codebase.
 
 # Models
 
