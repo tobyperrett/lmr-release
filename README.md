@@ -10,6 +10,14 @@ It is forked from the [Motionformer](https://github.com/facebookresearch/Motionf
 tools/simple_example.py
 ```
 
+# LT-Dataset splits
+
+EPIC Kitchens just uses the default dataset as it is a natural long tail. We provide splits for SSv2-LT and VideoLT-LT here:
+
+[Link to splits](https://www.dropbox.com/scl/fo/gekwzzdizgrmz5clacg9x/h?dl=0&rlkey=sxlm9z1nwodchfvhmzxmilv5x)
+
+For both, there are jsons for the train, val and test splits (in the motionformer format). Note that motionformer only uses "train" and "val", so we have renamed these as "train", and "trainval" and "val" for SSv2-LT. Using these as provided will train on the train set, and test on the test set. For VideoLT-LT, we also provide conversions to the format used in the [VideoLT](https://videolt.github.io/) codebase.
+
 # Models
 
 LMR uses the cRT setup. First, instance-balanced sampling is used to train a model from scratch with standard cross-entropy training (i.e. no LMR). This is the initialisation. Next, the initialisation is fine-tuned under class-balanced sampling with LMR. We provide both the intialisations and the fine-tuned models:
@@ -24,11 +32,7 @@ sbatch run_single_node_test.sh /path/to/config /path/to/model
 
 The "verb_lt" output is [average_class_acc, average_head_acc, average_tail_acc, average_few_shot_acc]. Similar for SSv2-LT.
 
-# LT-Dataset splits
 
-EPIC Kitchens just uses the default dataset as it is a natural long tail. We provide splits for SSv2-LT and VideoLT-LT here:
-
-[Link to splits](https://www.dropbox.com/scl/fo/gekwzzdizgrmz5clacg9x/h?dl=0&rlkey=sxlm9z1nwodchfvhmzxmilv5x)
 
 Note that the Framestack codebase is different from Motionformer and relies on pre-extracted ResNet features, so is not provided here.
 
@@ -45,4 +49,4 @@ If you find this helpful, please cite our paper:
 }
 ```
 
-And also cite the [EPIC](https://epic-kitchens.github.io/), [Something-Something V2](https://developer.qualcomm.com/software/ai-datasets/something-something) and [VideoLT](https://videolt.github.io/) works.
+And also cite the [EPIC](https://epic-kitchens.github.io/), [Something-Something V2](https://developer.qualcomm.com/software/ai-datasets/something-something) and [VideoLT](https://videolt.github.io/) works we build on when using the benchmarks.
