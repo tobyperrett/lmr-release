@@ -12,7 +12,7 @@ tools/simple_example.py
 
 # LT-Dataset splits
 
-EPIC Kitchens just uses the default dataset as it is a natural long tail. We provide splits for SSv2-LT and VideoLT-LT here:
+As it is a natural long tail, we do not cuate a subset for EPIC-Kitchens 100 verbs. We train on the original EPIC train set, and evaluate on the val set. We provide new long-tail splits for SSv2-LT and VideoLT-LT here:
 
 [Link to splits](https://www.dropbox.com/scl/fo/gekwzzdizgrmz5clacg9x/h?dl=0&rlkey=sxlm9z1nwodchfvhmzxmilv5x)
 
