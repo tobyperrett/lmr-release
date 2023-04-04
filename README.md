@@ -12,7 +12,7 @@ tools/simple_example.py
 
 # LT-Dataset splits
 
-As it is a natural long tail, we do not cuate a subset for EPIC-Kitchens 100 verbs. We train on the original EPIC train set, and evaluate on the val set. We provide new long-tail splits for SSv2-LT and VideoLT-LT here:
+As it is a natural long tail, we do not cuate a subset for EPIC-Kitchens 100 verbs. We train on the original EPIC train set, and evaluate on the val set. We provide new long-tail splits for SSv2-LT and VideoLT-LT, which are subsets of the originals, here:
 
 [Link to splits](https://www.dropbox.com/scl/fo/gekwzzdizgrmz5clacg9x/h?dl=0&rlkey=sxlm9z1nwodchfvhmzxmilv5x)
 
@@ -29,6 +29,8 @@ To run inference on the Epic Kitchens model, update the paths/num_gpus and batch
 ```
 sbatch run_single_node_test.sh /path/to/config /path/to/model
 ```
+
+from the appropriate slurm_script folder.
 
 The "verb_lt" output is [average_class_acc, average_head_acc, average_tail_acc, average_few_shot_acc]. Similar for SSv2-LT.
 
